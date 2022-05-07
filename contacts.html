@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="styles/index.css" rel="stylesheet" type="text/css">
+    <link href="styles/header.css" rel="stylesheet" type="text/css">
+    <link href="styles/main.css" rel="stylesheet" type="text/css">
+    <link href="styles/modalWindow.css" rel="stylesheet" type="text/css">
+    <link href="styles/contacts.css" rel="stylesheet" type="text/css">
+    <title>Health</title>
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <header class='header'>
+        <div class="header__inner">
+            <a href="index.html">
+                <div class="header__logo">
+                    <img alt='logo' src='pictures/logo.svg' class="header__logo-img" />
+                </div>
+            </a>
+            <div class="header__container">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a href="contacts.html" class=" menu__list-item-link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class='login-btn' id="submit" data-path="form-popup" onclick="logout()">Войти</button>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="contacts">
+            <h1 class="main__title title">
+                Контакты
+            </h1>
+        </div>
+    </div>
+    <div class="modals">
+        <div class="modal-overlay">
+            <div class="modal modal--1" data-target="form-popup">
+                <h2>Авторизация</h2>
+                <input placeholder="Login" class="modal-input" type="text" id="login" onclick="closeModalError()" />
+                <div class="modal-validate_login"></div>
+                <input placeholder="Password" class="modal-input" type="password" id="password"
+                    onclick="closeModalError()" />
+                <div class="modal-validate_password"></div>
+                <div class="modal-find_user"></div>
+                <button class="modal-button" id="modalSubmit">Войти</button>
+            </div>
+        </div>
+    </div>
+    <script src="loadingPage.js"></script>
+    <script src="modalWindow.js"></script>
+    <script src="log.js"></script>
+    <script src="auth.js"></script>
+    <script src="logout.js"></script>
+</body>
+
+</html>

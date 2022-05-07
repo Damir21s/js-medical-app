@@ -1,0 +1,16 @@
+.profile {
+  margin-top: 45px;
+}
+
+.profile .main__title.title {
+  letter-spacing: 1px;
+}
+
+.profile .main__btn-container {
+  margin-top: 25px;
+}
+
+.profile .main__btn-container .login-btn {
+  padding: 13px 37px;
+}
+/*# sourceMappingURL=profile.css.map */

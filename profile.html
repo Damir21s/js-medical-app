@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="styles/index.css" rel="stylesheet" type="text/css">
+    <link href="styles/header.css" rel="stylesheet" type="text/css">
+    <link href="styles/main.css" rel="stylesheet" type="text/css">
+    <link href="styles/profile.css" rel="stylesheet" type="text/css">
+    <title>Health</title>
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <header class='header'>
+        <div class="header__inner">
+            <a href="index.html">
+                <div class="header__logo">
+                    <img alt='logo' src='pictures/logo.svg' class="header__logo-img" />
+                </div>
+            </a>
+            <div class="header__container">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a href="contacts.html" class="menu__list-item-link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class='login-btn' id="submit" onclick="logout()">Выйти</button>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="profile">
+            <div>
+                <h1 class="main__title title" id="profile_title">
+                    Привет,
+                </h1>
+            </div>
+            <div class="main__btn-container">
+                <button class='login-btn' id="submit" data-path="form-popup" onclick="logout()">Выйти из
+                    аккаунта</button>
+                <a href="contacts.html"><button class='main__contacts-btn'>Перейти в контакты</button></a>
+            </div>
+        </div>
+    </div>
+    <script src="loadingPage.js"></script>
+    <script src="log.js"></script>
+    <script src="logout.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="styles/index.css" rel="stylesheet" type="text/css">
+    <link href="styles/header.css" rel="stylesheet" type="text/css">
+    <link href="styles/main.css" rel="stylesheet" type="text/css">
+    <link href="styles/modalWindow.css" rel="stylesheet" type="text/css">
+    <title>Health</title>
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <header class='header'>
+        <div class="header__inner">
+            <a href="index.html">
+                <div class="header__logo">
+                    <img alt='logo' src='pictures/logo.svg' class="header__logo-img" />
+                </div>
+            </a>
+            <div class="header__container">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a href="contacts.html" class="menu__list-item-link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class='login-btn' id="submit" data-path="form-popup" onclick="logout()">Войти</button>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="main__container">
+            <h1 class="main__title title">
+                Место для получения медицинской помощи
+            </h1>
+            <div class="main__btn-container">
+                <button class='login-btn' id="submit" data-path="form-popup" onclick="logout()">Войти</button>
+                <a href="contacts.html"><button class='main__contacts-btn'>Контакты</button></a>
+            </div>
+            <div class="main__our-service ">
+                <ul class="main__our-service-list">
+                    <li>
+                        <div class="our-service-item">
+                            <div class="our-service-item__inner">
+                                <img alt="pic" src='pictures/onlineReception.svg' class="our-service-item__img" />
+                                <p class="our-service-item__title">Онлайн-прием</p>
+                                <div class="our-service-item__line"></div>
+                                <p class="our-service-item__text">Рыба текст</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="our-service-item">
+                            <div class="our-service-item__inner">
+                                <img alt="pic" src='pictures/anEmergency.svg' class="our-service-item__img" />
+                                <p class="our-service-item__title">Экстренный Случай</p>
+                                <div class="our-service-item__line"></div>
+                                <p class="our-service-item__text">Рыба текст</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="our-service-item">
+                            <div class="our-service-item__inner">
+                                <img alt="pic" src='pictures/cancerTreatment.svg' class="our-service-item__img" />
+                                <p class="our-service-item__title">Лечение рака</p>
+                                <div class="our-service-item__line"></div>
+                                <p class="our-service-item__text">Рыба текст</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="modals">
+        <div class="modal-overlay">
+            <div class="modal modal--1" data-target="form-popup">
+                <h2>Авторизация</h2>
+                <input placeholder="Login" class="modal-input" type="text" id="login" onclick="closeModalError()" />
+                <div class="modal-validate_login"></div>
+                <input placeholder="Password" class="modal-input" type="password" id="password"
+                    onclick="closeModalError()" />
+                <div class="modal-validate_password"></div>
+                <div class="modal-find_user"></div>
+                <button class="modal-button" id="modalSubmit">Войти</button>
+            </div>
+        </div>
+    </div>
+    <script src="loadingPage.js"></script>
+    <script src="log.js"></script>
+    <script src="modalWindow.js"></script>
+    <script src="auth.js"></script>
+    <script src="logout.js"></script>
+</body>
+
+</html>

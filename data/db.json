@@ -1,0 +1,22 @@
+[
+    {
+      "name": "Сергей",
+      "login": "1",
+      "password": "1"
+    },
+    {
+      "name": "Петр",
+      "login": "petr2000",
+      "password": "petr2000"
+    },
+    {
+      "name": "Иван",
+      "login": "ivan2000",
+      "password": "ivanka2000"
+    },
+    {
+      "name": "Анастасия",
+      "login": "nastya2000",
+      "password": "12rgsfqwd"
+    }
+]
